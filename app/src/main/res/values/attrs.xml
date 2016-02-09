@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyCustomButton">
+        <attr name="mcb_main_text" format="string" />
+        <attr name="mcb_hint_text" format="string" />
+        <attr name="mcb_icon" format="integer" />
+    </declare-styleable>
+</resources>

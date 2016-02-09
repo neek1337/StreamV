@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TableLayout;
 
 import java.io.File;
@@ -29,7 +30,7 @@ public class SecondActivity extends AppCompatActivity {
 
         int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
-        Button button = (Button) findViewById(R.id.button1);
+        //ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
         button = (Button) findViewById(R.id.button2);
