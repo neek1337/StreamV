@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +31,7 @@ public class SecondActivity extends AppCompatActivity {
 
         int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
-        //ImageButton button = (ImageButton) findViewById(R.id.button1);
+//        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
         button = (Button) findViewById(R.id.button2);
@@ -55,6 +56,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
     public void HandleClick(View view) {
+        Log.w("pressed button", String.valueOf(view.getId()));
         startNTrack(view.getId() - 2131558481);
     }
 
