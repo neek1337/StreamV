@@ -19,32 +19,122 @@
             android:layout_weight="1"
             >
 
-            <ui.component.CustomButton
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
-                android:id="@+id/button1"
-                android:onClick="HandleClick"
-                android:clickable="true" />
-
-            <ui.component.CustomButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_weight="1"
-                android:id="@+id/button2"
-                android:onClick="HandleClick"
-                android:clickable="true" />
-
-            <ui.component.CustomButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_weight="1"
-                android:onClick="HandleClick"
+                android:alpha="0.5"
                 android:clickable="true"
-                android:id="@+id/button3" />
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button1"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button2"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button3"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
 
         </TableRow>
 
@@ -58,26 +148,122 @@
 
             >
 
-            <ui.component.CustomButton
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
-                android:id="@+id/button4" />
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
 
-            <ui.component.CustomButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_weight="1"
-                android:id="@+id/button5" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button4"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
 
-            <ui.component.CustomButton
+                <TextView
+                    android:id="@+id/uiMyButtonMainText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
-                android:id="@+id/button6" />
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button5"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button6"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
 
         </TableRow>
 
@@ -91,26 +277,122 @@
 
             >
 
-            <ui.component.CustomButton
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
-                android:id="@+id/button7" />
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
 
-            <ui.component.CustomButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_weight="1"
-                android:id="@+id/button8" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button7"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
 
-            <ui.component.CustomButton
+                <TextView
+                    android:id="@+id/uiMyButtonMainText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
-                android:id="@+id/button9" />
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button8"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:clickable="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:id="@+id/button9"
+                    android:background="@drawable/background_my_ui_cusom_button"
+                    android:onClick="HandleClick" />
+
+                <TextView
+                    android:id="@+id/uiMyButtonMainText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MainText"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/saveButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/download"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true" />
+
+
+            </RelativeLayout>
 
         </TableRow>
     </TableLayout>

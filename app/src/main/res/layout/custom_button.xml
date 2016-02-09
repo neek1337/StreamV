@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:alpha="0.5"
     android:clickable="true"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    android:onClick="HandleClick">
 
     <ImageView
         android:id="@+id/uiMyButtonIcon"
@@ -14,8 +15,7 @@
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
         android:clickable="true"
-        android:background="@drawable/background_my_ui_cusom_button"
-        android:paddingBottom="10dp" />
+        android:background="@drawable/background_my_ui_cusom_button" />
 
     <TextView
         android:id="@+id/uiMyButtonMainText"

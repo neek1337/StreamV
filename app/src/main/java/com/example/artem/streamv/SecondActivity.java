@@ -56,7 +56,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
     public void HandleClick(View view) {
-        Log.w("pressed button", String.valueOf(view.getId()));
+        Log.w("pressed button", String.valueOf((view.getId())));
         startNTrack(view.getId() - 2131558481);
     }
 
