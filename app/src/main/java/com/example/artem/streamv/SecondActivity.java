@@ -26,6 +26,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_layout);
         Intent intent = getIntent();
+
+        int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
         Button button = (Button) findViewById(R.id.button1);
         button.getBackground().setAlpha(64);
