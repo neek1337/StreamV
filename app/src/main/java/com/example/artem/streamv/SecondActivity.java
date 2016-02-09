@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity {
         int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
         Button button = (Button) findViewById(R.id.button1);
-        button.getBackground().setAlpha(64);
+        //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
         button = (Button) findViewById(R.id.button2);
         button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
@@ -54,19 +54,33 @@ public class SecondActivity extends AppCompatActivity {
 
     }
     public void HandleClick(View view) {
-        switch (view.getId()) {
-            case R.id.button1:
-                int id = this.getResources().getIdentifier(streamerName+"1", "raw", this.getPackageName());
-                mPlayer.stop();
-                mPlayer.release();
-                mPlayer= MediaPlayer.create(this, id);
-                mPlayer.start();
-                break;
-            case R.id.button2:
-                // do stuff
-                break;
-        }
+        startNTrack(view.getId() - 2131558481);
     }
 
+    public void startNTrack(int n){
+        int id = this.getResources().getIdentifier(streamerName + n, "raw", this.getPackageName());
+        mPlayer.stop();
+        mPlayer.release();
+        mPlayer= MediaPlayer.create(this, id);
+        mPlayer.start();
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        getDelegate().onDestroy();
+        mPlayer.stop();
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        getDelegate().onStop();
+        mPlayer.pause();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        mPlayer.start();
+    }
 }
