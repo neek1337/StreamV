@@ -12,7 +12,9 @@
     <TableLayout
         android:id="@+id/tlImpEventContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
 
         <TableRow
             android:id="@+id/trStatusCode"
@@ -28,8 +30,8 @@
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:background="@drawable/photo3"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
@@ -37,8 +39,8 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:background="@drawable/photo2"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
@@ -46,11 +48,10 @@
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
+                android:background="@drawable/photo4"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:textColor="#FFFFFF"
-                android:text="Altaoda3"
                 android:onClick="HandleClick" />
 
         </TableRow>
@@ -68,30 +69,29 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/photo5"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/photo6"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/photo"
+                android:layout_height="match_parent"
+                android:background="@drawable/photo7"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:textColor="#FFFFFF"
-                android:text="Altaoda3"
                 android:onClick="HandleClick" />
 
         </TableRow>
@@ -110,8 +110,8 @@
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:background="@drawable/photo8"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
@@ -119,8 +119,8 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
-                android:layout_margin="10dp"
+                android:background="@drawable/photo9"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
 
@@ -128,11 +128,10 @@
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/photo"
+                android:background="@drawable/photo10"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:textColor="#FFFFFF"
-                android:text="Altaoda3"
                 android:onClick="HandleClick" />
 
         </TableRow>
