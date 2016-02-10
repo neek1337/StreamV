@@ -6,12 +6,14 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
 
 import java.io.File;
@@ -31,6 +33,9 @@ public class SecondActivity extends AppCompatActivity {
 
         int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
+        LinearLayout ll = (LinearLayout) findViewById(R.id.background);
+        int id = this.getResources().getIdentifier(streamerName + "_background", "drawable", this.getPackageName());
+        ll.setBackground(ContextCompat.getDrawable(this, id));
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));

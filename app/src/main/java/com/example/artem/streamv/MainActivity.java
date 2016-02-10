@@ -14,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
     }
 
     public void HandleClick(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
         switch (view.getId()) {
             case R.id.button1:
-                intent.putExtra("streamerName", "altaoda");
+                intent.putExtra("streamerName", "sing_sing");
 
                 break;
             case R.id.button2:
