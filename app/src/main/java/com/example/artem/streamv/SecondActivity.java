@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -17,11 +18,18 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by artem on 08.02.16.
  */
 public class SecondActivity extends AppCompatActivity {
+
+    Boolean isSDPresent;
+
     String streamerName;
     MediaPlayer mPlayer = new MediaPlayer();
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -30,6 +38,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_layout);
         Intent intent = getIntent();
+        isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
 
         int a = 3;
        streamerName  = intent.getStringExtra("streamerName");
@@ -90,5 +99,36 @@ public class SecondActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         mPlayer.start();
+    }
+
+    public void OnSave(View view) throws IOException {
+
+        Log.w("pressed button", String.valueOf((view.getId())));
+        File folder = new File("sdcard/vtic");
+        folder.mkdir();
+        Log.w("testDir", folder.getAbsolutePath());
+
+
+        int n = (view.getId() - 2131558511) / 2 + 1;
+        Log.w("n", String.valueOf(n));
+        int id = this.getResources().getIdentifier(streamerName + n, "raw", this.getPackageName());
+        InputStream in = getResources().openRawResource(id);
+        Log.w("path", folder.getAbsolutePath());
+
+        FileOutputStream out = new FileOutputStream(folder.getAbsolutePath() + "/" + streamerName + n + ".mp3");
+        byte[] buff = new byte[1024];
+
+        int read = 0;
+
+        try {
+            while ((read = in.read(buff)) > 0) {
+                out.write(buff, 0, read);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            in.close();
+            out.close();
+        }
     }
 }
