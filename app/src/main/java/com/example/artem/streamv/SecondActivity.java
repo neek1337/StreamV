@@ -16,12 +16,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * Created by artem on 08.02.16.
@@ -45,6 +47,12 @@ public class SecondActivity extends AppCompatActivity {
         LinearLayout ll = (LinearLayout) findViewById(R.id.background);
         int id = this.getResources().getIdentifier(streamerName + "_background", "drawable", this.getPackageName());
         ll.setBackground(ContextCompat.getDrawable(this, id));
+        ArrayList<String> listOfPhrases = Helper.phrases.get(streamerName);
+        for (int i = 0; i < 9; i++) {
+            int n = 2131558510 + i * 2;
+            TextView textView = (TextView) findViewById(n);
+            textView.setText(listOfPhrases.get(i));
+        }
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
