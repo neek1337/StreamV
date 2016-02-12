@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import adapters.CustomPagerAdapter;
+
 /**
  * Created by artem on 08.02.16.
  */
@@ -38,21 +41,20 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_layout);
+        setContentView(R.layout.activity_start);
         Intent intent = getIntent();
-        isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
+        streamerName = intent.getStringExtra("streamerName");
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new CustomPagerAdapter(this, streamerName));
 
-        int a = 3;
-       streamerName  = intent.getStringExtra("streamerName");
-        LinearLayout ll = (LinearLayout) findViewById(R.id.background);
+        isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
         int id = this.getResources().getIdentifier(streamerName + "_background", "drawable", this.getPackageName());
-        ll.setBackground(ContextCompat.getDrawable(this, id));
-        ArrayList<String> listOfPhrases = Helper.phrases.get(streamerName);
-        for (int i = 0; i < 9; i++) {
-            int n = 2131558510 + i * 2;
-            TextView textView = (TextView) findViewById(n);
-            textView.setText(listOfPhrases.get(i));
-        }
+        Log.w("id_true", String.valueOf(id));
+        int a = 3;
+
+        LinearLayout ll = (LinearLayout) findViewById(R.id.background);
+
+
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
@@ -88,6 +90,10 @@ public class SecondActivity extends AppCompatActivity {
         mPlayer.release();
         mPlayer= MediaPlayer.create(this, id);
         mPlayer.start();
+    }
+
+    public void onTextClick(View view) {
+        Log.w("textId", String.valueOf(view.getId()));
     }
 
     @Override
