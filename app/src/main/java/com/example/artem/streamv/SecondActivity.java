@@ -95,8 +95,6 @@ public class SecondActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.acion_info:
                 intent.putExtra("streamerName", streamerName);
-
-
         }
         startActivity(intent);
         return true;
