@@ -11,6 +11,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,6 +54,7 @@ public class SecondActivity extends AppCompatActivity {
         Log.w("id_true", String.valueOf(id));
         int a = 3;
 
+
         LinearLayout ll = (LinearLayout) findViewById(R.id.background);
 
 
@@ -79,6 +82,26 @@ public class SecondActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent(this, InfoActivity.class);
+        switch (item.getItemId()) {
+            case R.id.acion_info:
+                intent.putExtra("streamerName", streamerName);
+
+
+        }
+        startActivity(intent);
+        return true;
+    }
+
     public void HandleClick(View view) {
         Log.w("pressed button", String.valueOf((view.getId())));
         startNTrack(view.getId() - 2131558481);
