@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+    android:layout_height="wrap_content"
     tools:context="com.example.artem.streamv.MainActivity">
-
     <TableLayout
         android:id="@+id/tlImpEventContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <TableRow
@@ -19,7 +16,6 @@
             android:layout_marginTop="8dp"
             android:weightSum="3"
             android:layout_weight="1"
-
             >
 
             <Button
@@ -51,7 +47,6 @@
                 android:onClick="HandleClick" />
 
         </TableRow>
-
         <TableRow
             android:id="@+id/trStatusCode2"
             android:layout_width="fill_parent"
@@ -94,11 +89,11 @@
 
         <TableRow
             android:id="@+id/trStatusCode3"
-            android:layout_weight="1"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:weightSum="3"
+            android:layout_weight="1"
 
             >
 
@@ -106,7 +101,7 @@
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/photo8"
+                android:background="@drawable/photo5"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
@@ -115,7 +110,7 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/photo9"
+                android:background="@drawable/photo6"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:onClick="HandleClick" />
@@ -124,13 +119,13 @@
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/photo10"
+                android:background="@drawable/photo_alta3"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 android:textColor="#FFFFFF"
                 android:onClick="HandleClick" />
 
         </TableRow>
-    </TableLayout>
 
-</RelativeLayout>
+    </TableLayout>
+</ScrollView>
