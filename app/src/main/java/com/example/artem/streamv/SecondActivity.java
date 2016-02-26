@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
@@ -47,7 +48,7 @@ public class SecondActivity extends AppCompatActivity {
         int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
         Log.w("id_true", String.valueOf(id));
         int a = 3;
-        LinearLayout ll = (LinearLayout) findViewById(R.id.background);
+        ScrollView ll = (ScrollView) findViewById(R.id.background);
         ll.setBackgroundResource(id);
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
