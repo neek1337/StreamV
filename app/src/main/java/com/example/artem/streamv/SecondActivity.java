@@ -28,11 +28,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import adapters.CustomPagerAdapter;
 
-/**
- * Created by artem on 08.02.16.
- */
 public class SecondActivity extends AppCompatActivity {
 
     Boolean isSDPresent;
@@ -43,21 +39,16 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.second_test_layout);
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new CustomPagerAdapter(this, streamerName));
-
+        Log.w("streamer name is", streamerName);
         isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
-        int id = this.getResources().getIdentifier(streamerName + "_background", "drawable", this.getPackageName());
+        int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
         Log.w("id_true", String.valueOf(id));
         int a = 3;
-
-
         LinearLayout ll = (LinearLayout) findViewById(R.id.background);
-
-
+        ll.setBackgroundResource(id);
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
@@ -102,6 +93,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void HandleClick(View view) {
         Log.w("pressed button", String.valueOf((view.getId())));
+
         startNTrack(view.getId() - 2131558481);
     }
 
