@@ -40,7 +40,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_test_layout);
+        setContentView(R.layout.zaebalsya_uzhe_layout);
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
         Log.w("streamer name is", streamerName);
