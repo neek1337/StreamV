@@ -81,6 +81,7 @@ public class SecondActivity extends AppCompatActivity {
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent = new Intent(this, InfoActivity.class);
@@ -97,6 +98,7 @@ public class SecondActivity extends AppCompatActivity {
 
         startNTrack(view.getId() - 2131558481);
     }
+
 
     public void startNTrack(int n){
         int id = this.getResources().getIdentifier(streamerName + n, "raw", this.getPackageName());
