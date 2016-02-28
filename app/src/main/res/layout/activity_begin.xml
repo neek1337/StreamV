@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="1dp">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv1">
+
+                <ImageButton
+                    android:id="@+id/button_carina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test11"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv2">
+
+                <ImageButton
+                    android:id="@+id/button_versuta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test22"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="1dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv3">
+
+                <ImageButton
+                    android:id="@+id/button_altaoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test33"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv4">
+
+                <ImageButton
+                    android:id="@+id/button_dread"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test44"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="1dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv5">
+
+                <ImageButton
+                    android:id="@+id/button_vitysha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test55"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv6">
+
+                <ImageButton
+                    android:id="@+id/button_vjlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test6"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="1dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv7">
+
+                <ImageButton
+                    android:id="@+id/button_xboct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test_xboct1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv8">
+
+                <ImageButton
+                    android:id="@+id/button_papich"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test_papich1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="1dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv9">
+
+                <ImageButton
+                    android:id="@+id/button_sing_sing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test_sin11"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffd9d9d9"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                card_view:cardElevation="4dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cv10">
+
+                <ImageButton
+                    android:id="@+id/button_big_daddy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test_daddy1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:onClick="HandleClick"
+                    android:layout_margin="5dp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
