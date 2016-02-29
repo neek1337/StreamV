@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_solo:
                 intent.putExtra("streamerName", "solo");
                 break;
+            case R.id.button_cheat_banned:
+                intent.putExtra("streamerName", "cheat_banned");
+                break;
         }
         startActivity(intent);
     }
