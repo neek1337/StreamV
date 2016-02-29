@@ -43,6 +43,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.zaebalsya_uzhe_layout);
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
+
         Log.w("streamer name is", streamerName);
         isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
         int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
@@ -71,7 +72,7 @@ public class SecondActivity extends AppCompatActivity {
         button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));*/
         //EditText editText = (EditText) findViewById(R.id.textEditor);
         //editText.setText(streamerName);
-
+        setTitle(streamerName);
 
     }
 
@@ -96,7 +97,7 @@ public class SecondActivity extends AppCompatActivity {
     public void HandleClick(View view) {
         Log.w("pressed button", String.valueOf((view.getId())));
 
-        startNTrack(view.getId() - 2131558481);
+        startNTrack(view.getId() - 2131558561);
     }
 
 
