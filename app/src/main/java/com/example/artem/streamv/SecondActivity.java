@@ -43,12 +43,37 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.zaebalsya_uzhe_layout);
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
+
         Log.w("streamer name is", streamerName);
         isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
         int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
         Log.w("id_true", String.valueOf(id));
+        int a = 3;
         ScrollView ll = (ScrollView) findViewById(R.id.background);
         ll.setBackgroundResource(id);
+//        ImageButton button = (ImageButton) findViewById(R.id.button1);
+        //button.getBackground().setAlpha(64);
+      /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button2);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button3);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button4);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button5);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button6);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button7);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button8);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
+        button = (Button) findViewById(R.id.button9);
+        button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));*/
+        //EditText editText = (EditText) findViewById(R.id.textEditor);
+        //editText.setText(streamerName);
+        setTitle(streamerName);
+
     }
 
     @Override
@@ -72,7 +97,7 @@ public class SecondActivity extends AppCompatActivity {
     public void HandleClick(View view) {
         Log.w("pressed button", String.valueOf((view.getId())));
 
-        startNTrack(view.getId() - 2131558481);
+        startNTrack(view.getId() - 2131558561);
     }
 
 
