@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_big_daddy:
                 intent.putExtra("streamerName", "big_daddy");
                 break;
+            case R.id.button_solo:
+                intent.putExtra("streamerName", "solo");
+                break;
         }
         startActivity(intent);
     }
