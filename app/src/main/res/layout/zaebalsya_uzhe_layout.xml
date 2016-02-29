@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <TableRow
+            android:id="@+id/raw1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -39,7 +40,6 @@
                     android:onClick="HandleClick"
                     android:background="@drawable/selector_phrase_button" />
 
-
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
@@ -47,6 +47,8 @@
                     android:alpha="0.7"
                     android:layout_height="match_parent"
                     android:clickable="true"
+                    android:id="@+id/save1"
+                    android:onClick="onSave"
                     android:background="@drawable/selector_save_button" />
 
 
@@ -66,6 +68,8 @@
                     android:foreground="?android:attr/selectableItemBackground"
                     android:alpha="0.7"
                     android:layout_weight="0.4"
+                    android:id="@+id/play2"
+                    android:onClick="HandleClick"
                     android:background="@drawable/button_shape" />
 
 
@@ -75,6 +79,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.7"
+                    android:id="@+id/save2"
+                    android:onClick="onSave"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />
             </LinearLayout>
@@ -82,6 +88,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/raw2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -105,6 +112,8 @@
                     android:textColor="#FFFFFF"
                     android:clickable="true"
                     android:layout_weight="0.4"
+                    android:id="@+id/play3"
+                    android:onClick="HandleClick"
                     android:background="@drawable/button_shape" />
 
 
@@ -115,6 +124,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
+                    android:id="@+id/save3"
+                    android:onClick="onSave"
                     android:background="@drawable/button_save_shape" />
 
 
@@ -134,6 +145,8 @@
                     android:text="123"
                     android:textColor="#FFFFFF"
                     android:layout_weight="0.4"
+                    android:id="@+id/play4"
+                    android:onClick="HandleClick"
                     android:background="@drawable/button_shape" />
 
 
@@ -144,12 +157,15 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:alpha="0.7"
+                    android:id="@+id/save4"
+                    android:onClick="onSave"
                     android:background="@drawable/button_save_shape" />
             </LinearLayout>
 
         </TableRow>
 
         <TableRow
+            android:id="@+id/raw3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -171,6 +187,8 @@
                     android:clickable="true"
                     android:alpha="0.7"
                     android:layout_weight="0.4"
+                    android:id="@+id/play5"
+                    android:onClick="HandleClick"
                     android:background="@drawable/button_shape" />
 
 
@@ -180,6 +198,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
+                    android:id="@+id/save5"
+                    android:onClick="onSave"
                     android:background="@drawable/button_save_shape" />
 
 
@@ -195,6 +215,8 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:alpha="0.7"
+                    android:id="@+id/play6"
+                    android:onClick="HandleClick"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
 
@@ -204,6 +226,8 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/save6"
+                    android:onClick="onSave"
                     android:background="@drawable/button_save_shape"
                     android:clickable="true" />
             </LinearLayout>
@@ -211,6 +235,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/raw4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -230,6 +255,8 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:alpha="0.7"
+                    android:id="@+id/play7"
+                    android:onClick="HandleClick"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
 
@@ -240,6 +267,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.7"
+                    android:id="@+id/save7"
+                    android:onClick="onSave"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />
 
@@ -257,6 +286,8 @@
                     android:clickable="true"
                     android:layout_weight="0.4"
                     android:alpha="0.7"
+                    android:id="@+id/play8"
+                    android:onClick="HandleClick"
                     android:background="@drawable/button_shape" />
 
 
@@ -266,6 +297,219 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/save8"
+                    android:onClick="onSave"
+                    android:background="@drawable/button_save_shape" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/raw5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingRight="10dp">
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:alpha="0.7"
+                    android:id="@+id/play9"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/save9"
+                    android:onClick="onSave"
+                    android:background="@drawable/button_save_shape" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:alpha="0.7"
+                    android:id="@+id/play10"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/save10"
+                    android:onClick="onSave"
+                    android:background="@drawable/button_save_shape" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/raw6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingRight="10dp">
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play11"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/save11"
+                    android:onClick="onSave"
+                    android:background="@drawable/button_save_shape" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play12"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/save12"
+                    android:onClick="onSave"
+                    android:background="@drawable/button_save_shape" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/raw7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingRight="10dp">
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play13"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:id="@+id/save13"
+                    android:onClick="onSave"
+                    android:clickable="true"
+                    android:background="@drawable/button_save_shape" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play14"
+                    android:onClick="HandleClick"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/button_shape" />
+
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:alpha="0.7"
+                    android:id="@+id/save14"
+                    android:onClick="onSave"
+                    android:layout_height="match_parent"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />
             </LinearLayout>
@@ -273,6 +517,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/raw8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -290,15 +535,20 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:clickable="true"
                     android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play15"
+                    android:onClick="HandleClick"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
+
 
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:alpha="0.7"
+                    android:id="@+id/save15"
+                    android:onClick="onSave"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -315,17 +565,22 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:clickable="true"
                     android:alpha="0.7"
+                    android:clickable="true"
+                    android:id="@+id/play16"
+                    android:onClick="HandleClick"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
+
 
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:alpha="0.7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:id="@+id/save16"
+                    android:onClick="onSave"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />
             </LinearLayout>
@@ -333,192 +588,7 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingRight="10dp">
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingLeft="10dp">
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingRight="10dp">
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingLeft="10dp">
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:alpha="0.7"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingRight="10dp">
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:alpha="0.7"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingLeft="10dp">
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/button_shape" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:clickable="true"
-                    android:background="@drawable/button_save_shape" />
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
+            android:id="@+id/raw9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -538,6 +608,8 @@
                     android:alpha="0.7"
                     android:layout_height="match_parent"
                     android:clickable="true"
+                    android:id="@+id/play17"
+                    android:onClick="HandleClick"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
 
@@ -547,6 +619,8 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:alpha="0.7"
+                    android:id="@+id/save17"
+                    android:onClick="onSave"
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />
@@ -563,6 +637,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:alpha="0.7"
+                    android:id="@+id/play18"
+                    android:onClick="HandleClick"
                     android:clickable="true"
                     android:layout_weight="0.4"
                     android:background="@drawable/button_shape" />
@@ -573,6 +649,8 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:alpha="0.7"
+                    android:id="@+id/save18"
+                    android:onClick="onSave"
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:background="@drawable/button_save_shape" />

@@ -96,8 +96,21 @@ public class SecondActivity extends AppCompatActivity {
 
     public void HandleClick(View view) {
         Log.w("pressed button", String.valueOf((view.getId())));
+        Log.w("calc", String.valueOf((calc(view.getId()))));
+        startNTrack(calc(view.getId()));
+    }
 
-        startNTrack(view.getId() - 2131558561);
+    public int calc(int n){
+        int result = 1;
+        while(n!=2131558567){
+            n--;
+            n--;
+            result++;
+            if(result%2==1){
+                n--;
+            }
+        }
+        return result;
     }
 
 
