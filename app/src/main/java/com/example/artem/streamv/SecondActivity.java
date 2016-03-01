@@ -20,6 +20,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.io.File;
@@ -44,13 +45,14 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
 
+        modifyLayout(streamerName);
+
         Log.w("streamer name is", streamerName);
         isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
-        int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
-        Log.w("id_true", String.valueOf(id));
+
+        // Log.w("id_true", String.valueOf(id));
         int a = 3;
-        ScrollView ll = (ScrollView) findViewById(R.id.background);
-        ll.setBackgroundResource(id);
+
 //        ImageButton button = (ImageButton) findViewById(R.id.button1);
         //button.getBackground().setAlpha(64);
       /*  button.setBackground(this.getResources().getDrawable( this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName())));
@@ -78,7 +80,7 @@ public class SecondActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -144,6 +146,44 @@ public class SecondActivity extends AppCompatActivity {
         super.onRestart();
         mPlayer.start();
     }
+
+    public void modifyLayout(String streamerName) {
+        int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
+        ScrollView ll = (ScrollView) findViewById(R.id.background);
+        ll.setBackgroundResource(id);
+        switch (streamerName) {
+            case "xboct":
+                TableRow tb8 = (TableRow) findViewById(R.id.raw8);
+                tb8.setVisibility(View.GONE);
+                TableRow tb9 = (TableRow) findViewById(R.id.raw9);
+                tb9.setVisibility(View.GONE);
+                break;
+//            case "cheat_banned":
+//                TableRow tb8 = (TableRow) findViewById(R.id.raw8);
+//                tb8.setVisibility(View.GONE);
+//                TableRow tb9 = (TableRow) findViewById(R.id.raw9);
+//                tb9.setVisibility(View.GONE);
+        }
+
+    }
+
+    public void deleteRows(int i) {
+        switch (i) {
+            case 1:
+                TableRow tb9 = (TableRow) findViewById(R.id.raw9);
+                tb9.setVisibility(View.GONE);
+                break;
+            case 2:
+                TableRow tb8 = (TableRow) findViewById(R.id.raw8);
+                tb8.setVisibility(View.GONE);
+//                TableRow tb9 = (TableRow) findViewById(R.id.raw9);
+//                tb9.setVisibility(View.GONE);
+                break;
+        }
+
+    }
+
+
 
     public void OnSave(View view) throws IOException {
 
