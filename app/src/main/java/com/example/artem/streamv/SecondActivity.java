@@ -47,7 +47,7 @@ public class SecondActivity extends AppCompatActivity {
 
         modifyLayout(streamerName);
 
-        Log.w("streamer name is", streamerName);
+        //Log.w("streamer name is", streamerName);
         isSDPresent = android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
 
         // Log.w("id_true", String.valueOf(id));
@@ -87,13 +87,21 @@ public class SecondActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, InfoActivity.class);
+
         switch (item.getItemId()) {
             case R.id.acion_info:
-                intent.putExtra("streamerName", streamerName);
+                goInfo();
+                break;
         }
-        startActivity(intent);
+
         return true;
+    }
+
+    public void goInfo() {
+        Intent intent = new Intent(this, InfoActivity.class);
+        intent.putExtra("streamerName", streamerName);
+        Log.w("asasdasdasd", streamerName);
+        startActivity(intent);
     }
 
     public void HandleClick(View view) {
