@@ -40,8 +40,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-
-                android:text="asdjhaskdasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehasdjhaskdhjkhjkqwhkasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehasdjhaskdhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkwehhjkhjkqwhkqjwehqjkeqhkwjhjkqwekqjwehqkwejhqkjehqkwehqkwekqjwehqwkjehqkjwehqjkwehqjkweh"
+                android:id="@+id/info_text"
+                android:text=""
                 android:layout_height="match_parent" />
         </ScrollView>
 

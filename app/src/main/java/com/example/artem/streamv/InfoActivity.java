@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.lang.reflect.Field;
 import java.net.URI;
@@ -19,16 +20,21 @@ import java.net.URI;
  * Created by neek on 16.02.16.
  */
 public class InfoActivity extends AppCompatActivity {
+    String streamerName;
+    String vkLink;
+    String twitchLink;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_layout);
         Intent intent = getIntent();
-        String streamerName = intent.getStringExtra("streamerName") + "_main";
+        streamerName = intent.getStringExtra("streamerName");
         ImageView img = (ImageView) findViewById(R.id.streamer_info_image);
-        int id = this.getResources().getIdentifier(streamerName, "drawable", this.getPackageName());
+        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_main", "drawable", this.getPackageName());
         img.setBackgroundResource(id);
+        TextView info_text = (TextView) findViewById(R.id.info_text);
+        info_text.setText(Helper.infoMap.get(streamerName).get(0));
     }
 
     public static int getResId(String resName, Class<?> c) {
@@ -48,10 +54,19 @@ public class InfoActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://www.twitch.tv/versuta"));
+        intent.setData(Uri.parse(Helper.infoMap.get(streamerName).get(2)));
+        Log.w("link", Helper.infoMap.get(streamerName).get(2));
         startActivity(intent);
     }
 
-
+    public void onTwitchClick(View view) {
+        Log.w("twitch", " clicked");
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse(Helper.infoMap.get(streamerName).get(1)));
+        Log.w("link", Helper.infoMap.get(streamerName).get(1));
+        startActivity(intent);
+    }
 
 }

@@ -111,21 +111,12 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public int calc(int n){
-        int result = 1;
-        while(n!=2131558567){
-            n--;
-            n--;
-            result++;
-            if(result%2==1){
-                n--;
-            }
-        }
-        return result;
+        return n - 2131558568;
     }
 
 
     public void startNTrack(int n){
-        int id = this.getResources().getIdentifier(streamerName + n, "raw", this.getPackageName());
+        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_" + n, "raw", this.getPackageName());
         mPlayer.stop();
         mPlayer.release();
         mPlayer= MediaPlayer.create(this, id);
@@ -156,7 +147,48 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void modifyLayout(String streamerName) {
-        int id = this.getResources().getIdentifier(streamerName + "_background1", "drawable", this.getPackageName());
+
+        Button play1 = (Button) findViewById(R.id.play1);
+        play1.setText(Helper.phrases.get(streamerName.toLowerCase()).get(0));
+        Button play2 = (Button) findViewById(R.id.play2);
+        play2.setText(Helper.phrases.get(streamerName.toLowerCase()).get(1));
+        Button play3 = (Button) findViewById(R.id.play3);
+        play3.setText(Helper.phrases.get(streamerName.toLowerCase()).get(2));
+        Button play4 = (Button) findViewById(R.id.play4);
+        play4.setText(Helper.phrases.get(streamerName.toLowerCase()).get(3));
+        Button play5 = (Button) findViewById(R.id.play5);
+        play5.setText(Helper.phrases.get(streamerName.toLowerCase()).get(4));
+        Button play6 = (Button) findViewById(R.id.play6);
+        play6.setText(Helper.phrases.get(streamerName.toLowerCase()).get(5));
+        Button play7 = (Button) findViewById(R.id.play7);
+        play7.setText(Helper.phrases.get(streamerName.toLowerCase()).get(6));
+        Button play8 = (Button) findViewById(R.id.play8);
+        play8.setText(Helper.phrases.get(streamerName.toLowerCase()).get(7));
+        Button play9 = (Button) findViewById(R.id.play9);
+        play9.setText(Helper.phrases.get(streamerName.toLowerCase()).get(8));
+        Button play10 = (Button) findViewById(R.id.play10);
+        play10.setText(Helper.phrases.get(streamerName.toLowerCase()).get(9));
+        Button play11 = (Button) findViewById(R.id.play11);
+        play11.setText(Helper.phrases.get(streamerName.toLowerCase()).get(10));
+        Button play12 = (Button) findViewById(R.id.play12);
+        play12.setText(Helper.phrases.get(streamerName.toLowerCase()).get(11));
+        Button play13 = (Button) findViewById(R.id.play13);
+        play13.setText(Helper.phrases.get(streamerName.toLowerCase()).get(12));
+        Button play14 = (Button) findViewById(R.id.play14);
+        play14.setText(Helper.phrases.get(streamerName.toLowerCase()).get(13));
+        Button play15 = (Button) findViewById(R.id.play15);
+        play15.setText(Helper.phrases.get(streamerName.toLowerCase()).get(14));
+        Button play16 = (Button) findViewById(R.id.play16);
+        play16.setText(Helper.phrases.get(streamerName.toLowerCase()).get(15));
+        Button play17 = (Button) findViewById(R.id.play17);
+        play17.setText(Helper.phrases.get(streamerName.toLowerCase()).get(16));
+        Button play18 = (Button) findViewById(R.id.play18);
+        play18.setText(Helper.phrases.get(streamerName.toLowerCase()).get(17));
+        Button play19 = (Button) findViewById(R.id.play19);
+        play19.setText(Helper.phrases.get(streamerName.toLowerCase()).get(18));
+        Button play20 = (Button) findViewById(R.id.play20);
+        play20.setText(Helper.phrases.get(streamerName.toLowerCase()).get(19));
+        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_background1", "drawable", this.getPackageName());
         ScrollView ll = (ScrollView) findViewById(R.id.background);
         ll.setBackgroundResource(id);
         switch (streamerName) {
@@ -192,8 +224,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 
-
-    public void OnSave(View view) throws IOException {
+    public void onSave(View view) throws IOException {
 
         Log.w("pressed button", String.valueOf((view.getId())));
         File folder = new File("sdcard/vtic");
@@ -201,13 +232,15 @@ public class SecondActivity extends AppCompatActivity {
         Log.w("testDir", folder.getAbsolutePath());
 
 
-        int n = (view.getId() - 2131558511) / 2 + 1;
+        int n = view.getId() - 2131558569;
         Log.w("n", String.valueOf(n));
-        int id = this.getResources().getIdentifier(streamerName + n, "raw", this.getPackageName());
+        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_" + n, "raw", this.getPackageName());
         InputStream in = getResources().openRawResource(id);
         Log.w("path", folder.getAbsolutePath());
 
-        FileOutputStream out = new FileOutputStream(folder.getAbsolutePath() + "/" + streamerName + n + ".mp3");
+        Button b = (Button) findViewById(view.getId() - 1);
+        String text = (String) b.getText();
+        FileOutputStream out = new FileOutputStream(folder.getAbsolutePath() + "/" + streamerName + "_" + text + ".mp3");
         byte[] buff = new byte[1024];
 
         int read = 0;

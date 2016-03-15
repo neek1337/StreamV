@@ -10,8 +10,11 @@ import java.util.Scanner;
 public class Helper {
     public static HashMap<String, ArrayList<String>> phrases;
 
+    public static HashMap<String, ArrayList<String>> infoMap;
+
     public Helper(Context ctx) {
         phrases = new HashMap<String, ArrayList<String>>();
+        infoMap = new HashMap<String, ArrayList<String>>();
         Scanner scanner = new Scanner(ctx.getResources().openRawResource(R.raw.phrases));
         String currentName = "";
         while (scanner.hasNextLine()) {
@@ -23,7 +26,19 @@ public class Helper {
                 phrases.get(currentName).add(line);
             }
         }
+        scanner = new Scanner(ctx.getResources().openRawResource(R.raw.info));
+        for (int i = 0; i < 12; i++) {
+            String name = scanner.nextLine();
+            String info = scanner.nextLine();
+            String twitch = scanner.nextLine();
+            String vk = scanner.nextLine();
+            infoMap.put(name, new ArrayList<String>());
+            infoMap.get(name).add(info);
+            infoMap.get(name).add(twitch);
+            infoMap.get(name).add(vk);
+        }
+
+    }
     }
 
 
-}

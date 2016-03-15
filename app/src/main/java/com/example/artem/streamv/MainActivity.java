@@ -25,40 +25,40 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         switch (view.getId()) {
             case R.id.button_carina:
-                intent.putExtra("streamerName", "karina");
+                intent.putExtra("streamerName", "Karina");
                 break;
             case R.id.button_versuta:
-                intent.putExtra("streamerName", "versuta");
+                intent.putExtra("streamerName", "Versuta");
                 break;
             case R.id.button_altaoda:
-                intent.putExtra("streamerName", "altaoda");
+                intent.putExtra("streamerName", "Altaoda");
                 break;
             case R.id.button_dread:
-                intent.putExtra("streamerName", "dread");
+                intent.putExtra("streamerName", "Dread");
                 break;
             case R.id.button_vitysha:
-                intent.putExtra("streamerName", "vitysha");
+                intent.putExtra("streamerName", "Vitysha");
                 break;
             case R.id.button_vjlink:
-                intent.putExtra("streamerName", "vjlink");
+                intent.putExtra("streamerName", "Vjlink");
                 break;
             case R.id.button_xboct:
-                intent.putExtra("streamerName", "xboct");
+                intent.putExtra("streamerName", "Xboct");
                 break;
             case R.id.button_papich:
-                intent.putExtra("streamerName", "papich");
+                intent.putExtra("streamerName", "Papich");
                 break;
             case R.id.button_sing_sing:
-                intent.putExtra("streamerName", "sing_sing");
+                intent.putExtra("streamerName", "Sing_sing");
                 break;
             case R.id.button_big_daddy:
-                intent.putExtra("streamerName", "big_daddy");
+                intent.putExtra("streamerName", "Big_daddy");
                 break;
             case R.id.button_solo:
-                intent.putExtra("streamerName", "solo");
+                intent.putExtra("streamerName", "Solo");
                 break;
             case R.id.button_cheat_banned:
-                intent.putExtra("streamerName", "cheat_banned");
+                intent.putExtra("streamerName", "Cheat_banned");
                 break;
         }
         startActivity(intent);
