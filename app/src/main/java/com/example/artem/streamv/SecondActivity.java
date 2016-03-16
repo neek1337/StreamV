@@ -22,6 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -184,10 +185,10 @@ public class SecondActivity extends AppCompatActivity {
         play17.setText(Helper.phrases.get(streamerName.toLowerCase()).get(16));
         Button play18 = (Button) findViewById(R.id.play18);
         play18.setText(Helper.phrases.get(streamerName.toLowerCase()).get(17));
-        Button play19 = (Button) findViewById(R.id.play19);
-        play19.setText(Helper.phrases.get(streamerName.toLowerCase()).get(18));
-        Button play20 = (Button) findViewById(R.id.play20);
-        play20.setText(Helper.phrases.get(streamerName.toLowerCase()).get(19));
+//        Button play19 = (Button) findViewById(R.id.play19);
+//        play19.setText(Helper.phrases.get(streamerName.toLowerCase()).get(18));
+//        Button play20 = (Button) findViewById(R.id.play20);
+//        play20.setText(Helper.phrases.get(streamerName.toLowerCase()).get(19));
         int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_background1", "drawable", this.getPackageName());
         ScrollView ll = (ScrollView) findViewById(R.id.background);
         ll.setBackgroundResource(id);
@@ -227,7 +228,7 @@ public class SecondActivity extends AppCompatActivity {
     public void onSave(View view) throws IOException {
 
         Log.w("pressed button", String.valueOf((view.getId())));
-        File folder = new File("sdcard/vtic");
+        File folder = new File("sdcard/streamSounds");
         folder.mkdir();
         Log.w("testDir", folder.getAbsolutePath());
 
@@ -255,5 +256,9 @@ public class SecondActivity extends AppCompatActivity {
             in.close();
             out.close();
         }
+
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Файл " + streamerName.toLowerCase() + "_" + text + ".mp3 сохранен в папке streamSounds", Toast.LENGTH_SHORT);
+        toast.show();
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:id="@+id/background">
 
 
@@ -15,12 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:alpha="0.7"
-            android:layout_marginTop="40dp"
+            android:alpha="0.8"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
 
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -34,7 +34,7 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text=""
                     android:textColor="#FFFFFF"
                     android:layout_weight="0.4"
@@ -45,7 +45,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:text="save"
@@ -69,7 +69,7 @@
                     android:textColor="#FFFFFF"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_weight="0.4"
                     android:id="@+id/play2"
                     android:onClick="HandleClick"
@@ -81,7 +81,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save2"
                     android:text="save"
                     android:textSize="12sp"
@@ -98,11 +98,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
-            android:alpha="0.7"
+            android:alpha="0.8"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -113,7 +113,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:textColor="#FFFFFF"
                     android:clickable="true"
@@ -126,7 +126,7 @@
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
@@ -149,7 +149,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:textColor="#FFFFFF"
                     android:layout_weight="0.4"
                     android:id="@+id/play4"
@@ -166,7 +166,7 @@
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save4"
                     android:onClick="onSave"
                     android:background="@drawable/selector_save_button" />
@@ -179,11 +179,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
-            android:alpha="0.7"
+            android:alpha="0.8"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -196,7 +196,7 @@
                     android:textColor="#FFFFFF"
                     android:layout_height="match_parent"
                     android:clickable="true"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_weight="0.4"
                     android:id="@+id/play5"
                     android:onClick="HandleClick"
@@ -210,6 +210,7 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:text="save"
+                    android:alpha="0.8"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
                     android:id="@+id/save5"
@@ -229,7 +230,7 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:textColor="#FFFFFF"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/play6"
                     android:onClick="HandleClick"
                     android:layout_weight="0.4"
@@ -245,6 +246,7 @@
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
+                    android:alpha="0.8"
                     android:onClick="onSave"
                     android:background="@drawable/selector_save_button"
                     android:clickable="true" />
@@ -257,11 +259,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:alpha="0.7"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -273,7 +275,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:textColor="#FFFFFF"
                     android:id="@+id/play7"
                     android:onClick="HandleClick"
@@ -286,7 +288,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
@@ -308,7 +310,7 @@
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:layout_weight="0.4"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/play8"
                     android:textColor="#FFFFFF"
                     android:onClick="HandleClick"
@@ -323,7 +325,7 @@
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/save8"
                     android:onClick="onSave"
@@ -337,11 +339,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:alpha="0.7"
-            android:layout_marginTop="40dp"
+            android:alpha="0.8"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -353,7 +355,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/play9"
                     android:textColor="#FFFFFF"
                     android:onClick="HandleClick"
@@ -363,7 +365,7 @@
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="save"
@@ -386,7 +388,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/play10"
                     android:onClick="HandleClick"
                     android:textColor="#FFFFFF"
@@ -396,7 +398,7 @@
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -415,11 +417,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:alpha="0.7"
-            android:layout_marginBottom="10dp">
+            android:alpha="0.8"
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -430,7 +432,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/play11"
                     android:onClick="HandleClick"
@@ -444,7 +446,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:text="save"
                     android:textSize="12sp"
@@ -464,7 +466,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:textColor="#FFFFFF"
                     android:id="@+id/play12"
@@ -478,7 +480,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/save12"
                     android:text="save"
@@ -495,11 +497,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:alpha="0.7"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -510,7 +512,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/play13"
                     android:onClick="HandleClick"
@@ -524,7 +526,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text="save"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
@@ -544,7 +546,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/play14"
                     android:onClick="HandleClick"
@@ -557,7 +559,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save14"
                     android:onClick="onSave"
                     android:text="save"
@@ -575,11 +577,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:alpha="0.7"
-            android:layout_marginTop="40dp"
+            android:alpha="0.8"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -590,7 +592,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/play15"
                     android:onClick="HandleClick"
@@ -602,7 +604,7 @@
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save15"
                     android:onClick="onSave"
                     android:text="save"
@@ -624,7 +626,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:clickable="true"
                     android:id="@+id/play16"
                     android:onClick="HandleClick"
@@ -638,7 +640,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save16"
                     android:onClick="onSave"
                     android:text="save"
@@ -655,11 +657,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:alpha="0.7"
-            android:layout_marginTop="40dp"
+            android:alpha="0.8"
+            android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -669,7 +671,7 @@
                 <Button xmlns:android="http://schemas.android.com/apk/res/android"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:layout_height="match_parent"
                     android:clickable="true"
                     android:id="@+id/play17"
@@ -683,7 +685,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save17"
                     android:onClick="onSave"
                     android:text="save"
@@ -704,7 +706,7 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/play18"
                     android:onClick="HandleClick"
                     android:textColor="#FFFFFF"
@@ -717,7 +719,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:id="@+id/save18"
                     android:text="save"
                     android:textSize="12sp"
@@ -730,85 +732,7 @@
 
         </TableRow>
 
-        <TableRow
-            android:id="@+id/raw10"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:paddingLeft="2dp"
-            android:alpha="0.7"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="10dp">
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingRight="10dp">
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:alpha="0.7"
-                    android:layout_height="match_parent"
-                    android:textColor="#FFFFFF"
-                    android:clickable="true"
-                    android:id="@+id/play19"
-                    android:onClick="HandleClick"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/selector_phrase_button" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:alpha="0.7"
-                    android:id="@+id/save19"
-                    android:onClick="onSave"
-                    android:text="save"
-                    android:textSize="12sp"
-                    android:textColor="#FFFFFF"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:background="@drawable/selector_save_button" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:paddingLeft="10dp">
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:id="@+id/play20"
-                    android:textColor="#FFFFFF"
-                    android:onClick="HandleClick"
-                    android:clickable="true"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/selector_phrase_button" />
-
-
-                <Button xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:alpha="0.7"
-                    android:id="@+id/save20"
-                    android:onClick="onSave"
-                    android:text="save"
-                    android:textSize="12sp"
-                    android:textColor="#FFFFFF"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:background="@drawable/selector_save_button" />
-            </LinearLayout>
-
-        </TableRow>
 
     </TableLayout>
 

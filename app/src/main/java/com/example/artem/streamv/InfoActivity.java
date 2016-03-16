@@ -31,7 +31,7 @@ public class InfoActivity extends AppCompatActivity {
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
         ImageView img = (ImageView) findViewById(R.id.streamer_info_image);
-        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_main", "drawable", this.getPackageName());
+        int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_background1", "drawable", this.getPackageName());
         img.setBackgroundResource(id);
         TextView info_text = (TextView) findViewById(R.id.info_text);
         info_text.setText(Helper.infoMap.get(streamerName).get(0));
