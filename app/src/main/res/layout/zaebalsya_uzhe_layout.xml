@@ -16,11 +16,11 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:alpha="0.8"
-            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
 
-            android:layout_marginBottom="1dp">
+            >
 
             <LinearLayout
                 android:layout_weight="1"
@@ -98,11 +98,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:paddingLeft="2dp"
             android:alpha="0.8"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -179,11 +178,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:paddingLeft="2dp"
             android:alpha="0.8"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -259,11 +257,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+
             android:alpha="0.8"
             android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -340,10 +337,9 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:alpha="0.8"
-            android:layout_marginTop="10dp"
+
             android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -417,11 +413,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
-            android:alpha="0.8"
-            android:layout_marginBottom="1dp">
+            android:alpha="0.8">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -497,11 +492,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+
             android:alpha="0.8"
             android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -578,10 +572,9 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:alpha="0.8"
-            android:layout_marginTop="10dp"
+
             android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -658,10 +651,9 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:alpha="0.8"
-            android:layout_marginTop="10dp"
+
             android:paddingLeft="2dp"
-            android:paddingRight="2dp"
-            android:layout_marginBottom="1dp">
+            android:paddingRight="2dp">
 
             <LinearLayout
                 android:layout_weight="1"
@@ -731,9 +723,6 @@
             </LinearLayout>
 
         </TableRow>
-
-
-
     </TableLayout>
 
 </ScrollView>

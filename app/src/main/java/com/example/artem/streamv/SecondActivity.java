@@ -42,7 +42,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zaebalsya_uzhe_layout);
+        setContentView(R.layout.zbs);
         Intent intent = getIntent();
         streamerName = intent.getStringExtra("streamerName");
 
@@ -190,7 +190,10 @@ public class SecondActivity extends AppCompatActivity {
 //        Button play20 = (Button) findViewById(R.id.play20);
 //        play20.setText(Helper.phrases.get(streamerName.toLowerCase()).get(19));
         int id = this.getResources().getIdentifier(streamerName.toLowerCase() + "_background1", "drawable", this.getPackageName());
-        ScrollView ll = (ScrollView) findViewById(R.id.background);
+        //ScrollView ll = (ScrollView) findViewById(R.id.background);
+        //ll.setBackgroundResource(id);
+
+        LinearLayout ll = (LinearLayout) findViewById(R.id.background);
         ll.setBackgroundResource(id);
         switch (streamerName) {
             case "xboct":
